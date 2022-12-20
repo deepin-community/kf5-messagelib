@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+include /usr/share/dpkg/pkg-info.mk
+include /usr/share/dpkg/default.mk
+libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
+include /usr/share/pkg-kde-tools/qt-kde-team/3/library-packages.mk
+
+AbiVirtualPackageVersion = $(call dpkg_late_eval,AbiVirtualPackageVersion,echo '${DEB_VERSION_UPSTREAM}' | sed -e 's/\.[0-9]\+$$//')
+pkgs_lib = $(filter-out %-dev %-doc %-dbg %-data %-bin %-plugins,$(filter lib%,$(shell dh_listpackages)))
+
+%:
+	dh $@ --with kf5
+
+override_dh_makeshlibs:
+	for pkg in $(pkgs_lib); do \
+		name=$$( echo "$${pkg}" | sed -e 's/abi[0-9]\+\s*//'); \
+		echo "ABI:VirtualPackage=$${name}-${AbiVirtualPackageVersion}" >> debian/$${pkg}.substvars; \
+		dh_makeshlibs -p$${pkg} -V "$${pkg} (>= $(DEB_VERSION_EPOCH_UPSTREAM)), $${name}-${AbiVirtualPackageVersion}"; \
+	done
+
+override_dh_auto_test:
+# The tests do not run successfully on mipsel for buster and it seems,
+# that it is a RAM issue as the tests are anyways flaky,
+# disable the tests for now. (hefee - 20190301)
+ifeq ($(DEB_HOST_ARCH), mipsel)
+	echo "tests disabled for mipsel"
+else
+	- xvfb-run -a --server-args="-screen 0 1024x768x24 +extension GLX" --\
+	           dh_auto_test --no-parallel
+endif
+
+override_dh_gencontrol-arch: libpkgs_gen_strict_local_shlibs
+	dh_gencontrol -a

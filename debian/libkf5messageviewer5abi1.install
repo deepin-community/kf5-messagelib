@@ -1,0 +1,3 @@
+usr/lib/*/libKF5MessageViewer.so.5*
+usr/lib/*/qt5/plugins/messageviewer/grantlee/5.0/messageviewer_grantlee_extension.so
+usr/lib/*/qt5/plugins/messageviewer/headerstyle/messageviewer_defaultgrantleeheaderstyleplugin.so

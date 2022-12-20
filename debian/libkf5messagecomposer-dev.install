@@ -1,0 +1,9 @@
+messagecomposer/src/job/abstractencryptjob.h usr/include/KF5/messagecomposer/
+messagecomposer/src/job/contentjobbase.h usr/include/KF5/messagecomposer/
+messagecomposer/src/part/infopart.h usr/include/KF5/messagecomposer/part/
+usr/include/KF5/MessageComposer/
+usr/include/KF5/messagecomposer/
+usr/include/KF5/messagecomposer_version.h
+usr/lib/*/cmake/KF5MessageComposer/
+usr/lib/*/libKF5MessageComposer.so
+usr/lib/*/qt5/mkspecs/modules/qt_MessageComposer.pri

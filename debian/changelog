@@ -1,0 +1,541 @@
+kf5-messagelib (4:21.08.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:43:36 +0800
+
+kf5-messagelib (4:21.08.1-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.1).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 11 Sep 2021 07:21:18 +0900
+
+kf5-messagelib (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:11:29 +0900
+
+kf5-messagelib (4:21.04.3-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.3).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 09 Jul 2021 10:48:27 +0900
+
+kf5-messagelib (4:21.04.1-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.1).
+
+ -- Norbert Preining <norbert@preining.info>  Fri, 14 May 2021 06:10:28 +0900
+
+kf5-messagelib (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+  * Update patches, drop all upstream related patches.
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 13 May 2021 09:46:16 +0900
+
+kf5-messagelib (4:20.08.3-5) unstable; urgency=high
+
+  [ Norbert Preining ]
+  * Backport upstream fix for CVE-2021-31855 (Closes: #989438).
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 23 Jun 2021 12:48:07 +0200
+
+kf5-messagelib (4:20.08.3-4) unstable; urgency=medium
+
+  * Fix broken patch series file (Closes: #986452).
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 06 Apr 2021 16:22:38 +0200
+
+kf5-messagelib (4:20.08.3-3) unstable; urgency=medium
+
+  * Add upstream patch to show correct icons (Closes: #964963).
+  * Add upstream patch to reenable contact preferences again
+    (Closes: #986404).
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 05 Apr 2021 13:06:12 +0200
+
+kf5-messagelib (4:20.08.3-2) unstable; urgency=medium
+
+  * Add upstream patch to not break the signature of mails.
+  * Add upstream patch to sign and encrypt protected headers.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 01 Feb 2021 20:34:19 +0100
+
+kf5-messagelib (4:20.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.5.1 (No changes needed).
+  * New upstream release (20.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Update patch hunks.
+  * Add upstream patch to fix segfault for encrypted mails.
+  * Minimize the upstream GPG signing key.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 16 Dec 2020 01:50:33 +0100
+
+kf5-messagelib (4:20.08.2-2) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 20 Oct 2020 00:09:32 +0200
+
+kf5-messagelib (4:20.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Update Homepage link to point to new invent.kde.org
+  * Update field Source in debian/copyright to invent.kde.org move.
+  * Update repository related entries to metadata file.
+  * Add Bug-* entries to metadata file.
+  * Remove not needed Build-Depends.
+  * Update copyright file for 20.08.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 16 Oct 2020 00:53:18 +0200
+
+kf5-messagelib (4:20.04.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - call the right debhelper command instead of $(overridden_command)
+    - manually force the generation of the substvars for the strict shlibs
+      handling
+  * There is grantlee 5.2 in Debian, so:
+    - drop patch lower_grantlee_dep.patch
+    - bump the libgrantlee5-dev build dependency to 5.2
+  * Unregister the old /etc/xdg/messagelib.categories,
+    /etc/xdg/messagelib.renamecategories, and
+    /etc/xdg/messageviewer_header_themes.knsrc conffiles.
+  * Update install files.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 16 Aug 2020 21:30:17 +0200
+
+kf5-messagelib (4:20.04.1-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (20.04.1).
+  * Update build-deps and deps with the info from cmake.
+  * Remove not needed Build-Depends.
+  * Lower Grantlee dependency to 5.1.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 27 May 2020 00:00:56 +0200
+
+kf5-messagelib (4:20.04.0-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Update watch file to the new release-service location.
+  * Bump compat level to 13.
+  * Bump Standards-Version to 4.5.0 (No changes needed).
+  * Add Rules-Requires-Root field to control.
+  * New upstream release (20.04.0).
+  * Update build-deps and deps with the info from cmake.
+  * Lower Grantlee dependency to 5.1.
+  * Update patch hunks.
+  * Update install files as files were renamed and deleted.
+  * Wrap long lines in changelog entries: 4:16.04.3-2.
+  * Update renamed lintian tag names in lintian overrides.
+  * Set fields Upstream-Name, Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Enable hardening all.
+  * Update copyright file.
+  * Remove not needed lintian-overrides.
+
+ -- Sandro Knauß <hefee@debian.org>  Wed, 13 May 2020 12:24:10 +0200
+
+kf5-messagelib (4:19.08.3-1) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 30 Nov 2019 22:55:44 +0100
+
+kf5-messagelib (4:19.08.2-1) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * New upstream release (19.08.2).
+  * Update build-deps and deps with the info from cmake.
+  * Remove breaks against kde-l10n packages.
+  * Update install files for new upstream release.
+  * Delete backported patches.
+  * Update patch hunks.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 08 Nov 2019 10:41:34 +0100
+
+kf5-messagelib (4:18.08.3-5) unstable; urgency=medium
+
+  [ Sandro Knauß ]
+  * Remove workaround for pkg-kde-tools.
+  * Update dependency for pkg-kde-tools.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 14 Nov 2019 23:54:01 +0100
+
+kf5-messagelib (4:18.08.3-4) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Add workaround for bug in pkg-kde-tools to handle virtual packages
+    correctly.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 08 Oct 2019 00:54:36 +0200
+
+kf5-messagelib (4:18.08.3-3) experimental; urgency=medium
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.4.1 (No changes needed).
+  * Bump compat level to 12.
+  * Add myself to Uploaders.
+  * Delete not needed Breaks/Confilcts.
+  * Use virtual packages to bundle KDEPIM.
+  * Enforce depdendencies between KDEPIM packages to enable bundling.
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 06 Oct 2019 22:43:55 +0200
+
+kf5-messagelib (4:18.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Disable running tests on mipsel.
+  * Add patch for CVE-2018-19516 (Closes: #915039)
+  * Add Build-Depends-Package for symbols files.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 02 Mar 2019 01:20:22 +0100
+
+kf5-messagelib (4:18.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (18.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.3.0 (No changes needed).
+  * Removed acc autopkgtest.
+  * Removed testsuite autopkgtest.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 04 Feb 2019 16:02:40 +0100
+
+kf5-messagelib (4:18.08.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Bump Standards-Version to 4.2.1 (No changes needed).
+  * Update symbols from buildds for 4:18.07.90
+  * Follow stable releases in KDE again.
+  * New upstream release (18.08.1).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 02 Oct 2018 23:20:27 +0200
+
+kf5-messagelib (4:18.07.90-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update watch file to match unstable releases, too.
+  * New upstream release (18.07.90).
+  * Bump Standards-Version to 4.2.0 (No changes needed).
+  * Update build-deps and deps with the info from cmake.
+  * Update symbols from build for 18.07.90.
+  * Use DebianABIManager to handle messagelib.
+  * Update library from libkf5messagecomposer5 -> libkf5messagecomposer5abi1.
+  * Update library from libkf5messagecore5 -> libkf5messagecore5abi1.
+  * Update library from libkf5messagelist5 -> libkf5messagelist5abi1.
+  * Update library from libkf5messageviewer5 -> libkf5messageviewer5abi1.
+  * Update library from libkf5mimetreeparser5 -> libkf5mimetreeparser5abi1.
+  * Update library from libkf5webengineviewer5 -> libkf5webengineviewer5abi1.
+  * Add libxml2-utils to Build-Depends to run tests.
+  * Update copyright file for new upstream.
+  * Update lintian-overrides for jquery.
+  * Remove patches from upstream.
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 20 Aug 2018 14:17:13 +0200
+
+kf5-messagelib (4:17.12.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * Update symbols files with buildds' logs.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 31 Jul 2018 22:31:27 -0300
+
+kf5-messagelib (4:17.12.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Backport a patch that makes webenginemessageviewer work with Qt 5.11
+    (Closes: #905132).
+  * Add add_missing_hehader.patch to add missing includes due to Qt 5.11
+    becoming more strict with their usage.
+  * Update symbols files with current build log (no changes in the buildds'
+    ones).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 31 Jul 2018 19:04:56 -0300
+
+kf5-messagelib (4:17.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.3).
+  * Update build-deps and deps with the info from cmake.
+  * use secure copyright format uri.
+  * Update linitian overrides.
+  * Update package descriptions.
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 31 Mar 2018 18:24:27 +0200
+
+kf5-messagelib (4:17.12.2-4) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update symbols from buildds for 4:17.12.2
+
+ -- Sandro Knauß <hefee@debian.org>  Sun, 25 Mar 2018 16:16:03 +0200
+
+kf5-messagelib (4:17.12.2-3) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Update symbols from buildds for 4:17.12.2
+
+ -- Sandro Knauß <hefee@debian.org>  Mon, 19 Mar 2018 21:46:09 +0100
+
+kf5-messagelib (4:17.12.2-2) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Install plugin messageviewer_grantlee_extension and the syntax-
+    highlighting template.
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 15 Mar 2018 14:32:38 +0100
+
+kf5-messagelib (4:17.12.2-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.12.2).
+  * Update Vcs links to salsa.
+  * update watch file: @PACKAGE@ is not source name.
+  * Update build-deps and deps with the info from cmake
+  * Update copyright file.
+  * remove patches, as they are not needed anymore.
+  * Enable build tests (make them non-failing).
+  * Add symbols files for libraries.
+  * Bump debhelper build-dep and compat to 11.
+
+ -- Sandro Knauß <hefee@debian.org>  Fri, 09 Mar 2018 15:14:15 +0100
+
+kf5-messagelib (4:17.08.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Stop using dh_linktree, as it is not really used:
+    - remove the dh-linktree build dependency
+    - stop using the linktree dh addon
+  * Simplify watch file, and switch it to https.
+  * Migrate from dh to dhmk
+    - bump the pkg-kde-tools build dependency to >= 0.15.15
+  * Tighten the inter-library dependencies.
+  * Remove alternative libqt5webengine5-dev build dependency.
+  * Bump Standards-Version to 4.1.3, no changes required.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 20 Jan 2018 10:25:58 +0100
+
+kf5-messagelib (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * New upstream release (17.08.3).
+  * Bump Standards-Version to 4.1.2 (No changes needed).
+  * Get rid of unnessary break/replaces of kde-l10n-(ast|eo).
+  * Remove not needed Build-Deps.
+  * Bump debhelper build-dep and compat to 10.
+  * Set l10npkgs_firstversion_ok to 4:16.04.3-9~
+
+ -- Sandro Knauß <hefee@debian.org>  Thu, 21 Dec 2017 17:54:43 +0100
+
+kf5-messagelib (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * Migrating to pure dh
+  * Bump Standards-Version to 4.0.1.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * Update copyright file
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 01 Sep 2017 22:08:46 +0200
+
+kf5-messagelib (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:44:52 +0000
+
+kf5-messagelib (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:26:22 +0000
+
+kf5-messagelib (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:24:48 +0000
+
+kf5-messagelib (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:28:03 +0000
+
+kf5-messagelib (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 20 Apr 2017 09:25:55 +0000
+
+kf5-messagelib (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:51:28 +0000
+
+kf5-messagelib (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:04:39 +0000
+
+kf5-messagelib (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:26:01 +0000
+
+kf5-messagelib (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:33:09 +0000
+
+kf5-messagelib (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:55:06 +0000
+
+kf5-messagelib (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:41:55 +0000
+
+kf5-messagelib (4:16.08.1-1~1.gbp57516a) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @57516a11065c20d9e9b428bad58648ead76e7e17 **
+
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+  * Update symbols files with the buildds results
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 08 Sep 2016 21:26:42 +0200
+
+kf5-messagelib (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:08:34 +0000
+
+kf5-messagelib (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:51:09 +0000
+
+kf5-messagelib (4:16.04.3-3) unstable; urgency=high
+
+  * Team upload.
+
+  [ Sandro Knauß ]
+  * Fix CVE-2017-9604: Send Later with Delay bypasses OpenPGP (Closes: #864803)
+    - Added upstream patch fix-CVE-2017-9604.patch
+
+ -- Sandro Knauß <hefee@debian.org>  Sat, 17 Jun 2017 09:08:12 +0200
+
+kf5-messagelib (4:16.04.3-2) unstable; urgency=high
+
+  [ Automatic packaging ]
+  * Update symbols files with the buildds results
+  * Update symbols files.
+
+  [ Maximiliano Curia ]
+  * Add upstream patch:
+    make-it-impossible-to-override-css-settings-from-a-h.patch
+
+  [ Pino Toscano ]
+  * autopkgtest: switch from oxygen5-icon-theme back to the canonical
+    oxygen-icon-theme.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 02 Aug 2016 14:06:21 +0200
+
+kf5-messagelib (4:16.04.3-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Update symbols files from buildds logs (4:16.04.2-2).
+
+  [ Maximiliano Curia ]
+  * Update symbols files for x32 compatibility
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 14 Jul 2016 14:58:21 +0200
+
+kf5-messagelib (4:16.04.2-2) unstable; urgency=low
+
+  [ Automatic packaging ]
+  * Update symbols files with the buildds results
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 06 Jul 2016 23:59:51 +0200
+
+kf5-messagelib (4:16.04.2-1) experimental; urgency=medium
+
+  [ Automatic packaging ]
+  * Refresh patches
+  * Update symbols files with the buildds results
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 30 Jun 2016 17:10:36 +0200
+
+kf5-messagelib (4:16.04.1-1) experimental; urgency=medium
+
+  [ Maximiliano Curia ]
+  * Initial release.
+  * Update symbols files.
+  * Add dependency needed to fulfill the message composer cmake file
+  * Add missing akonadi test dependencies
+  * testsuite: Call kdeinit
+  * Add missing breaks/replaces
+  * Add new upstream patches: upstream_add_copying_files.patch
+
+  [ Automatic packaging ]
+  * Update symbols files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 06 Jun 2016 12:29:18 +0200

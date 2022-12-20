@@ -1,0 +1,5 @@
+usr/include/KF5/MimeTreeParser/
+usr/include/KF5/mimetreeparser
+usr/include/KF5/mimetreeparser_version.h
+usr/lib/*/cmake/KF5MimeTreeParser/
+usr/lib/*/libKF5MimeTreeParser.so

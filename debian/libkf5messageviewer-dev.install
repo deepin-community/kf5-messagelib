@@ -1,0 +1,6 @@
+usr/include/KF5/MessageViewer/
+usr/include/KF5/messageviewer/
+usr/include/KF5/messageviewer_version.h
+usr/lib/*/cmake/KF5MessageViewer/
+usr/lib/*/libKF5MessageViewer.so
+usr/lib/*/qt5/mkspecs/modules/qt_MessageViewer.pri

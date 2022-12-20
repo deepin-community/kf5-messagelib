@@ -1,0 +1,6 @@
+usr/include/KF5/MessageCore/
+usr/include/KF5/messagecore/
+usr/include/KF5/messagecore_version.h
+usr/lib/*/cmake/KF5MessageCore/
+usr/lib/*/libKF5MessageCore.so
+usr/lib/*/qt5/mkspecs/modules/qt_MessageCore.pri

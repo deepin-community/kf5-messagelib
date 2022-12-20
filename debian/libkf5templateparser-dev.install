@@ -1,0 +1,6 @@
+usr/include/KF5/TemplateParser/
+usr/include/KF5/templateparser/
+usr/include/KF5/templateparser_version.h
+usr/lib/*/cmake/KF5TemplateParser/
+usr/lib/*/libKF5TemplateParser.so
+usr/lib/*/qt5/mkspecs/modules/qt_TemplateParser.pri

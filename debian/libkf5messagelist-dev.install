@@ -1,0 +1,6 @@
+usr/include/KF5/MessageList/
+usr/include/KF5/messagelist/
+usr/include/KF5/messagelist_version.h
+usr/lib/*/cmake/KF5MessageList/
+usr/lib/*/libKF5MessageList.so
+usr/lib/*/qt5/mkspecs/modules/qt_MessageList.pri

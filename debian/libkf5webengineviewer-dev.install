@@ -1,0 +1,6 @@
+usr/include/KF5/WebEngineViewer/
+usr/include/KF5/webengineviewer/
+usr/include/KF5/webengineviewer_version.h
+usr/lib/*/cmake/KF5WebEngineViewer/
+usr/lib/*/libKF5WebEngineViewer.so
+usr/lib/*/qt5/mkspecs/modules/qt_WebEngineViewer.pri
